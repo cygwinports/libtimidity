@@ -1,0 +1,78 @@
+libtimidity
+------------------------------------------
+This library is based on the TiMidity decoder from SDL_sound library.
+Purpose to create this library is to avoid unnecessary dependences.
+SDL_sound requires SDL and some other libraries, that not needed to
+process MIDI files. In addition libTiMidity provides more suitable
+API to work with MIDI songs, it enables to specify full path to the
+timidity configuration file, and have function to retrieve meta data
+from MIDI song.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+
+Build requirements:
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.8-1.8.5-3
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://libtimidity.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/libtimidity/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libtimidity-0.1.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libtimidity-0.1.0-X.cygport all
+
+This will create:
+  /usr/src/libtimidity-0.1.0-X-src.tar.bz2
+  /usr/src/libtimidity-0.1.0-X.tar.bz2
+  /usr/src/libtimidity010-0.1.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libtimidity)
+  /usr/include/timidity.h
+  /usr/lib/libtimidity.a
+  /usr/lib/libtimidity.dll.a
+  /usr/lib/libtimidity.la
+  /usr/lib/pkgconfig/libtimidity.pc
+  /usr/share/doc/Cygwin/libtimidity-0.1.0.README
+  /usr/share/doc/libtimidity-0.1.0/AUTHORS
+  /usr/share/doc/libtimidity-0.1.0/COPYING
+  /usr/share/doc/libtimidity-0.1.0/ChangeLog
+  /usr/share/doc/libtimidity-0.1.0/Changes
+  /usr/share/doc/libtimidity-0.1.0/INSTALL
+  /usr/share/doc/libtimidity-0.1.0/NEWS
+  /usr/share/doc/libtimidity-0.1.0/README
+  /usr/share/doc/libtimidity-0.1.0/TODO
+
+(libtimidity010)
+  /usr/bin/cygtimidity-0-1-0.dll
+
+------------------
+
+Port Notes:
+
+----- version 0.1.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
