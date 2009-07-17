@@ -9,18 +9,19 @@ timidity configuration file, and have function to retrieve meta data
 from MIDI song.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.7.0-51
+  libgcc1-4.3.2-2
+  timidity-eawpatches
 
 Build requirements:
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.8-1.8.5-3
-  binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.8-1.8.5-10
+  binutils-2.19.51-1
+  cygport-0.9.7-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-14
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -40,38 +41,36 @@ Build instructions:
 
 This will create:
   /usr/src/libtimidity-0.1.0-X-src.tar.bz2
-  /usr/src/libtimidity-0.1.0-X.tar.bz2
-  /usr/src/libtimidity010-0.1.0-X.tar.bz2
+  /usr/src/libtimidity-devel-0.1.0-X.tar.bz2
+  /usr/src/libtimidity0.1_0-0.1.0-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(libtimidity)
+(libtimidity010)
+  /usr/bin/cygtimidity-0-1-0.dll
+  /usr/share/doc/libtimidity/AUTHORS
+  /usr/share/doc/libtimidity/COPYING
+  /usr/share/doc/libtimidity/ChangeLog
+  /usr/share/doc/libtimidity/Changes
+  /usr/share/doc/libtimidity/NEWS
+  /usr/share/doc/libtimidity/README
+  /usr/share/doc/libtimidity/TODO
+
+(libtimidity-devel)
   /usr/include/timidity.h
   /usr/lib/libtimidity.a
   /usr/lib/libtimidity.dll.a
   /usr/lib/libtimidity.la
   /usr/lib/pkgconfig/libtimidity.pc
-  /usr/share/doc/Cygwin/libtimidity-0.1.0.README
-  /usr/share/doc/libtimidity-0.1.0/AUTHORS
-  /usr/share/doc/libtimidity-0.1.0/COPYING
-  /usr/share/doc/libtimidity-0.1.0/ChangeLog
-  /usr/share/doc/libtimidity-0.1.0/Changes
-  /usr/share/doc/libtimidity-0.1.0/INSTALL
-  /usr/share/doc/libtimidity-0.1.0/NEWS
-  /usr/share/doc/libtimidity-0.1.0/README
-  /usr/share/doc/libtimidity-0.1.0/TODO
-
-(libtimidity010)
-  /usr/bin/cygtimidity-0-1-0.dll
 
 ------------------
 
 Port Notes:
 
------ version 0.1.0-1 -----
-Initial release for Cygwin.
+----- version 0.1.0-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

@@ -1,7 +1,7 @@
 category: Audio
-requires: libgcc1
+requires: libtimidity0.1_0
 external-source: libtimidity
-sdesc: "MIDI to WAV converter library (runtime)"
+sdesc: "MIDI to WAV converter library (development)"
 ldesc: "This library is based on the TiMidity decoder from SDL_sound 
 library. Purpose to create this library is to avoid unnecessary 
 dependences. SDL_sound requires SDL and some other libraries, that not 

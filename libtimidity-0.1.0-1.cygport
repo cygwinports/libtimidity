@@ -1,8 +1,0 @@
-DESCRIPTION="MIDI to WAV converter library"
-HOMEPAGE="http://libtimidity.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
-
-PKG_NAMES="${PN} ${PN}${PV//.}"
-PKG_HINTS="setup dll"
-PKG_CONTENTS[0]='usr/include/ usr/lib/ usr/share/'
-PKG_CONTENTS[1]="usr/bin/${PN/lib/cyg}-${PV//./-}.dll"
