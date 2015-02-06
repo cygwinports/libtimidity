@@ -14,6 +14,6 @@ SRC_URI="mirror://sourceforge/libtimidity/libtimidity-${VERSION}.tar.bz2"
 PATCH_URI="0.1.0-no-undefined.patch"
 
 PKG_NAMES="${NAME}0.1_0 ${NAME}-devel"
-libtimidity0_1_0_REQUIRES="timidity-freepats"
+libtimidity0_1_0_REQUIRES="soundfont-fluid-lite-patches"
 libtimidity0_1_0_CONTENTS="usr/bin/*-0-1-0.dll usr/share/doc/"
 libtimidity_devel_CONTENTS='usr/include/ usr/lib/'
