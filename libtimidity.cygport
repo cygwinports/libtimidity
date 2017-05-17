@@ -1,6 +1,6 @@
 NAME="libtimidity"
-VERSION=0.1.0
-RELEASE=10
+VERSION=0.2.1
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MIDI to WAV converter library"
 DESCRIPTION="This library is based on the TiMidity decoder from SDL_sound
@@ -10,10 +10,11 @@ MIDI files. In addition libTiMidity provides more suitable API to work with
 MIDI songs, it enables to specify full path to the timidity configuration
 file, and have function to retrieve meta data from MIDI song."
 HOMEPAGE="http://libtimidity.sourceforge.net/"
-SRC_URI="mirror://sourceforge/libtimidity/libtimidity-${VERSION}.tar.bz2"
-PATCH_URI="0.1.0-no-undefined.patch"
+SRC_URI="mirror://sourceforge/libtimidity/libtimidity-${VERSION}.tar.gz"
 
-PKG_NAMES="${NAME}0.1_0 ${NAME}-devel"
-libtimidity0_1_0_REQUIRES="soundfont-fluid-lite-patches"
-libtimidity0_1_0_CONTENTS="usr/bin/*-0-1-0.dll usr/share/doc/"
+PKG_NAMES="${NAME}2 ${NAME}-devel"
+libtimidity2_REQUIRES="soundfont-fluid-lite-patches"
+libtimidity2_CONTENTS="usr/bin/cygtimidity-2.dll usr/share/doc/"
 libtimidity_devel_CONTENTS='usr/include/ usr/lib/'
+
+CYGCONF_ARGS="--with-timidity-cfg=/etc/timidity.cfg"
